@@ -11,12 +11,12 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   async function handleSignIn() {
-    const resultado = await SingIn(email, password);
-    if (resultado.status != 200) {
-      return [];
-    }
-    localStorage.setItem("jwt", resultado.message);
-    console.log(resultado.message);
+    // const resultado = await SingIn(email, password);
+    // if (resultado.status != 200) {
+    //   return [];
+    // }
+    // localStorage.setItem("jwt", resultado.message);
+    // console.log(resultado.message);
     navigate("/pagamento");
   }
 
